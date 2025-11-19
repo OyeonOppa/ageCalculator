@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ระบบตรวจสอบอายุ ปนพ.3</title>
+    
+    <!-- SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>ระบบตรวจสอบอายุ ปนพ.3</h1>
+            <p>กรุณากรอกวันเดือนปีเกิดของท่าน</p>
+        </div>
+
+        <form id="ageForm">
+            <div class="form-group">
+                <label for="birthdate">วันเดือนปีเกิด</label>
+                <input type="date" id="birthdate" required max="">
+            </div>
+
+            <button type="submit" class="btn-calculate">คำนวณอายุ</button>
+        </form>
+
+        <div class="info-box">
+            <p>📋 ระบบจะตรวจสอบว่าอายุของท่านเกิน 48 ปีหรือไม่<br>
+            • อายุ 48 ปีพอดี = <strong>ผ่านเกณฑ์</strong><br>
+            • อายุ 48 ปี 1 วัน = <strong>ไม่ผ่านเกณฑ์</strong></p>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
